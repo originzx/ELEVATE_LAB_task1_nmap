@@ -1,0 +1,29 @@
+135/tcp  open  msrpc 
+An open MSRPC (Microsoft Remote Procedure Call) service, especially when misconfigured, unpatched, or vulnerable, poses a significant security risk. Attackers can exploit vulnerabilities in MSRPC to execute arbitrary code remotely, potentially gaining control of the system or the network
+
+139/tcp  open  netbios-ssn
+An open NetBIOS Session Service (NetBIOS-SSN) port, specifically port 139, poses a significant security risk due to the potential for information disclosure, denial-of-service attacks, and unauthorized access. NetBIOS, used for file and printer sharing on local networks, can be exploited by attackers to gain sensitive information about a system and potentially take control. 
+Information Disclosure:
+Denial of Service (DoS) Attacks:
+Unauthorized Access:
+Credential Theft:
+
+
+445/tcp  open  microsoft-ds
+An open Microsoft-DS (SMB port 445) presents a significant security risk due to its susceptibility to exploitation by malware and ransomware, as demonstrated by attacks like WannaCry and NotPetya. While SMB facilitates essential file and printer sharing, it's crucial to secure this port and the related NetBIOS ports (137-139) by closing them to external networks and implementing strong security measures. 
+
+Exploitation:
+
+3306/tcp open  mysql
+An open MySQL port, particularly the default port 3306, presents a significant security risk. It exposes the database to potential attacks, including unauthorized access, malicious query injection, and denial-of-service attempts. While not an immediate risk on its own, an open port significantly increases the attack surface, especially if coupled with weak passwords or outdated software. 
+Risks of an open MySQL port:
+Unauthorized Access:
+Malicious Query Injection:
+
+
+7070/tcp open  realserver
+An open port 7070, often associated with RealNetworks RealServer, can indeed pose a security risk due to the potential for denial-of-service attacks or other vulnerabilities. Attackers can exploit weaknesses in how the service handles incoming data on this port, potentially disrupting its functionality or gaining unauthorized access
+Vulnerability Exposure:
+Data Breaches:
+Denial of Service (DoS):
+

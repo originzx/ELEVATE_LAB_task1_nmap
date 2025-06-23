@@ -1,0 +1,21 @@
+Common Services running on ports are as follow 
+here-
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+7070/tcp open  realserver
+
+here port no 135 is using tcp connection and which is open and using "msrpc" service msrpc (Microsoft Remote Procedure Call) is a protocol that allows a program on one computer to execute code on another computer across a network, acting as a client-server system. It's based on DCE/RPC and is fundamental to how many Windows services communicate. MSRPC uses various transport protocols like named pipes, NetBIOS, and Winsock, along with TCP, UDP, and HTTP to establish connection.
+
+and port no 139 using tcp connection and also open this service is NetBIOS Session Service (netbios-ssn) is a protocol that facilitates reliable, connection-oriented communication between devices on a local area network (LAN). It allows two computers to establish a session for the exchange of larger data messages, with error detection and recovery. Essentially, it's the part of NetBIOS that handles the "conversation" between devices ensuring data is send and recieve correctly.
+
+port no 445 using tcp connection service is open its a The "Microsoft-DS" service, often referred to as "ms-ds," is a network file sharing protocol primarily used by Microsoft Windows systems for sharing files and printers over a network. It operates on port 445 (TCP/UDP) and is a successor to the older SMB (Server Message Block) protocol. While it's a core part of Windows networking, it's also associated with security vulnerabilities and is recommended to be restricted to local network access
+
+Port 3306 using tcp connection and open also its a MySQL is a widely used, open-source relational database management system (RDBMS) that stores and manages data using SQL. It's known for its reliability, performance, and ease of use, making it a popular choice for various applications, including web applications, online publishing, and enterprise-level systems. MySQL organizes data into tables with rows and columns, allowing for efficient storage and retrieval.
+
+port no 7070 using tcp connection open -
+
+In Windows, a "Real Server" refers to a server that provides a specific service, like a web server, database server, or application server, that is being monitored and managed by a load balancer or another network management tool. The "Real Server" is the actual machine that hosts the service, and the monitoring system checks its availability and performance to ensure it's functioning correctly and can handle incoming traffic. 
+
