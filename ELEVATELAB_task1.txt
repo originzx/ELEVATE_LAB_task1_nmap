@@ -1,0 +1,28 @@
+1. nmap Instalation 
+Basicall when we are using Kali Linux it is preinstalled tool but want simulate a download use command 
+"sudo apt install nmap" this command will download letest version of nmap tool
+
+if using windows OS
+visit https://nmap.org 
+
+2. here check your ip address and target machine ip address
+For Linux - ifconfig
+for Windows - ipconfig
+
+or if you are using virtual box use a external wifi adapter and then run 
+
+3. i am running nmap -sS 192.168.92.164 because this is my windows machine target ip address.
+
+Here is the result 
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 21:43 IST
+Nmap scan report for 192.168.92.164
+Host is up (0.0027s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+7070/tcp open  realserver of ip address 192.168.92.164
+
+4. i didnt use wireshark because of some problem .
